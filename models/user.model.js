@@ -40,12 +40,10 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    address: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Address",
-      },
-    ],
+    address: {
+      type: String,
+      default: "No address saved yet!!",
+    },
     wishlist: [
       {
         type: mongoose.Schema.Types.ObjectId,
